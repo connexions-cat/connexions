@@ -178,3 +178,11 @@ button:hover {
         bottom: 10px;
     }
 }
+@media (max-width: 768px) {
+    /* Opcional: Puedes ajustar la escala si prefieres */
+    .board {
+        transform: scale(0.8); /* Reduce el tamaño, pero mantiene la cuadrícula */
+        transform-origin: top center; /* Asegura que se mantenga centrado */
+	grid-template-columns: repeat(4, 120px); /* Mantén 4 columnas */
+    }
+}
