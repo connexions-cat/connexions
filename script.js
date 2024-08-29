@@ -3,18 +3,18 @@
 // Definimos los diferentes puzzles disponibles
 const puzzles = [
     {
-        words: ['SARGANANA', 'IGUANA', 'TORTUGA', 'CAMALEÓ', 'TÒTIL', 'GAMARÚS', 'ASE', 'LLUÇ', 'FALCÓ', 'GAT', 'XACAL', 'IBIS', 'MUSSOL', 'MOSTELA', 'LLEBRE', 'GIRAFA'],
+        words: ['SARGANTANA', 'IGUANA', 'TORTUGA', 'CAMALEÓ', 'TÒTIL', 'GAMARÚS', 'ASE', 'LLUÇ', 'FALCÓ', 'GAT', 'XACAL', 'IBIS', 'MUSSOL', 'MOSTELA', 'LLEBRE', 'GIRAFA'],
         groups: {
-            group1: { words: ['SARGANANA', 'IGUANA', 'TORTUGA', 'CAMALEÓ'], difficulty: 'very-easy-group', label: 'RÈPTILS' },
+            group1: { words: ['SARGANTANA', 'IGUANA', 'TORTUGA', 'CAMALEÓ'], difficulty: 'very-easy-group', label: 'RÈPTILS' },
             group2: { words: ['TÒTIL', 'GAMARÚS', 'ASE', 'LLUÇ'], difficulty: 'easy-group', label: 'NO GAIRE ESPAVILAT' },
             group3: { words: ['FALCÓ', 'GAT', 'XACAL', 'IBIS'], difficulty: 'medium-group', label: 'REPRESENTACIONS DE DÉUS EGIPCIS' },
             group4: { words: ['MUSSOL', 'MOSTELA', 'LLEBRE', 'GIRAFA'], difficulty: 'hard-group', label: 'ACABATS EN NOTA MUSICAL' }
         }
     },
     {
-        words: ['SARGANANA', 'IGUANA', 'TORTUGA', 'CAMALEÓ', 'TÒTIL', 'GAMARÚS', 'ASE', 'LLUÇ', 'FALCÓ', 'GAT', 'XACAL', 'Ibis', 'Mussol', 'Mostela', 'Llebre', 'Girafa'],
+        words: ['SARGANTANA', 'IGUANA', 'TORTUGA', 'CAMALEÓ', 'TÒTIL', 'GAMARÚS', 'ASE', 'LLUÇ', 'FALCÓ', 'GAT', 'XACAL', 'Ibis', 'Mussol', 'Mostela', 'Llebre', 'Girafa'],
         groups: {
-            group1: { words: ['SARGANANA', 'IGUANA', 'TORTUGA', 'CAMALEÓ'], difficulty: 'very-easy-group', label: 'RÈPTILS' },
+            group1: { words: ['SARGANTANA', 'IGUANA', 'TORTUGA', 'CAMALEÓ'], difficulty: 'very-easy-group', label: 'RÈPTILS' },
             group2: { words: ['TÒTIL', 'GAMARÚS', 'ASE', 'LLUÇ'], difficulty: 'easy-group', label: 'NO GAIRE ESPAVILAT' },
             group3: { words: ['FALCÓ', 'GAT', 'XACAL', 'IBIS'], difficulty: 'medium-group', label: 'REPRESENTACIONS DE DÉUS EGIPCIS' },
             group4: { words: ['MUSSOL', 'MOSTELA', 'LLEBRE', 'GIRAFA'], difficulty: 'hard-group', label: 'ACABATS EN NOTA MUSICAL' }
