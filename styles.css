@@ -23,6 +23,8 @@ body {
     margin-bottom: 50px;
     overflow-x: auto;
     overflow-y: auto;
+    white-space: nowrap;
+
 }
 
 .cell, .group {
