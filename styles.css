@@ -15,8 +15,10 @@ body {
 .board {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Cambia a 1fr para que las columnas se ajusten automáticamente */
+    grid-template-rows: repeat(4, 120px); /* Mantén las filas fijas */
     gap: 10px; /* Espacio entre celdas */
     max-width: 620px; /* Ajusta el ancho máximo si es necesario */
+    justify-content: center;
     margin: 0 auto; /* Centra horizontalmente el contenedor de la cuadrícula */
     margin-bottom: 50px;
     overflow-x: auto;
@@ -163,8 +165,6 @@ button:hover {
     color: #333;
     margin-top: 60px;
 }
-
-
 
 @media (max-width: 768px) {
     /* Opcional: Puedes ajustar la escala si prefieres */
