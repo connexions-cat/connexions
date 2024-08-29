@@ -1,0 +1,182 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #f0f0f0;
+    padding-bottom: 80px; /* Espacio para el botón y las vidas */
+}
+
+.instructions {
+    margin: 60px;
+    font-size: 1.5em;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cambia a 1fr para que las columnas se ajusten automáticamente */
+    gap: 10px; /* Espacio entre celdas */
+    max-width: 620px; /* Ajusta el ancho máximo si es necesario */
+    margin: 0 auto; /* Centra horizontalmente el contenedor de la cuadrícula */
+    margin-bottom: 50px;
+}
+
+.cell, .group {
+    width: 150px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px solid #3498db;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+	text-transform: none; /* Esto asegura que no haya transformación de texto */
+}
+
+.cell:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transform: scale(1.00);
+}
+
+.cell.selected {
+    background-color: #646464;
+    color: #ffffff;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px;
+    height: 120px; /* Ajusta la altura automáticamente según el contenido */
+    width: 630px; /* Ajusta el ancho según tus necesidades */
+    margin: 4px auto;
+    font-size: 1em;
+    color: #000000;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 5px;
+    padding: 10px; /* Añade un poco de espacio interno */
+    box-sizing: border-box; /* Incluye padding y border en el ancho y alto del elemento */
+}
+
+.group h3 {
+    margin: 0;
+    font-size: 1.2em;
+	
+}
+
+.group p {
+    margin: 0;
+    font-size: 1em;
+    text-align: center; /* Opcional: centra el texto */
+	margin-top: 5px;
+	font-weight: normal;
+}
+
+#group-container {
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column; /* Asegúrate de que los grupos se añadan verticalmente */
+    align-items: center; /* Alinea los grupos en el centro */
+	transform: translateX(5px); /* Ajusta la posición horizontal del contenedor */
+    margin-top: 0px; /* Margen superior para el contenedor de grupos */
+	
+}
+
+
+#lives-container {
+    margin-bottom: 50px; /* Espacio entre las vidas y los botones */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el texto y las vidas */
+    justify-content: center;
+}
+
+#lives-label {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+#buttons-container {
+    display: flex;
+    gap: 20px; /* Espacio entre los botones */
+    justify-content: center;
+}
+
+/* Diferentes colores para los grupos según la dificultad */
+.very-easy-group {
+    background-color: #fffa84; /* Amarillo */
+}
+
+.easy-group {
+    background-color: #2ecc71; /* Verde */
+}
+
+.medium-group {
+    background-color: #779ECB; /* Azul */
+}
+
+.hard-group {
+    background-color: #B695C0; /* Lila */
+}
+
+button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #646464;
+	color: #ffffff;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.life {
+    width: 25px;
+    height: 25px;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+.timer {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 60px;
+}
+
+
+
+@media (max-width: 768px) {
+    .board {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cell, .group {
+        width: 100%;
+        height: auto;
+        font-size: 1em;
+    }
+    #check-button {
+        bottom: 20px;
+    }
+    #lives-container {
+        bottom: 10px;
+    }
+}
