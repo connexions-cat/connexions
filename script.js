@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (lives === 0) {
 
                     alert('Llàstima, intenta-ho demà');
-
+					showRemainingGroups();
                     disableGame();
 
                 } else if (partialGroup) {
