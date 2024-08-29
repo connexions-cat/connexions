@@ -188,4 +188,8 @@ button:hover {
 	grid-template-columns: repeat(4, 1fr); /* Mantén 4 columnas incluso en pantallas pequeñas */
         max-width: 100%; /* Ajusta el ancho de la cuadrícula al 100% de la pantalla */
     }
+    	.cell {
+        height: 80px; /* Puedes reducir el tamaño para que se ajuste mejor en pantallas pequeñas */
+        font-size: 1em; /* Ajusta el tamaño de la fuente si es necesario */
+    }
 }
