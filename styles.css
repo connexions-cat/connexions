@@ -19,6 +19,8 @@ body {
     max-width: 620px; /* Ajusta el ancho máximo si es necesario */
     margin: 0 auto; /* Centra horizontalmente el contenedor de la cuadrícula */
     margin-bottom: 50px;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 .cell, .group {
@@ -165,9 +167,13 @@ button:hover {
 
 
 @media (max-width: 768px) {
+    /* Opcional: Puedes ajustar la escala si prefieres */
     .board {
-        grid-template-columns: repeat(2, 1fr);
+        transform: scale(0.8); /* Reduce el tamaño, pero mantiene la cuadrícula */
+        transform-origin: top center; /* Asegura que se mantenga centrado */
+	grid-template-columns: repeat(4, 120px); /* Mantén 4 columnas */
     }
+}
     .cell, .group {
         width: 100%;
         height: auto;
