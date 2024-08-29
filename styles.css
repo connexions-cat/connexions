@@ -21,10 +21,6 @@ body {
     justify-content: center;
     margin: 0 auto; /* Centra horizontalmente el contenedor de la cuadrícula */
     margin-bottom: 50px;
-    overflow-x: auto;
-    overflow-y: auto;
-    white-space: nowrap;
-
 }
 
 .cell, .group {
