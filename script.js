@@ -3,12 +3,12 @@
 // Definimos los diferentes puzzles disponibles
 const puzzles = [
     {
-        words: ['SAANA', 'IGUANA', 'TORTUGA', 'CAMALEÓ', 'TÒTIL', 'GAMARÚS', 'ASE', 'LLUÇ', 'FALCÓ', 'GAT', 'XACAL', 'IBIS', 'mussol', 'mostela', 'llebre', 'girafa'],
+        words: ['SAANA', 'IGUANA', 'TORTUGA', 'CAMALEÓ', 'TÒTIL', 'GAMARÚS', 'ASE', 'LLUÇ', 'FALCÓ', 'GAT', 'XACAL', 'IBIS', 'MUSSOL', 'MOSTELA', 'LLEBRE', 'GIRAFA'],
         groups: {
             group1: { words: ['SAANA', 'IGUANA', 'TORTUGA', 'CAMALEÓ'], difficulty: 'very-easy-group', label: 'RÈPTILS' },
             group2: { words: ['TÒTIL', 'GAMARÚS', 'ASE', 'LLUÇ'], difficulty: 'easy-group', label: 'NO GAIRE ESPAVILAT' },
             group3: { words: ['FALCÓ', 'GAT', 'XACAL', 'ibis'], difficulty: 'medium-group', label: 'REPRESENTACIONS DE DÉUS EGIPCIS' },
-            group4: { words: ['mussol', 'mostela', 'llebre', 'girafa'], difficulty: 'hard-group', label: 'ACABATS EN NOTA MUSICAL' }
+            group4: { words: ['MUSSOL', 'MOSTELA', 'LLEBRE', 'GIRAFA'], difficulty: 'hard-group', label: 'ACABATS EN NOTA MUSICAL' }
         }
     },
     // Más puzzles aquí
