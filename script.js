@@ -3,7 +3,7 @@
 // Definimos los diferentes puzzles disponibles
 const puzzles = [
     {
-        words: ['SARGANTANA', 'IGUANA', 'TORTUGA', 'CAMALEÓ', 'TÒTIL', 'GAMARÚS', 'ASE', 'LLUÇ', 'FALCÓ', 'GAT', 'XACAL', 'IBIS', 'MUSSOL', 'MOSTELA', 'LLEBRE', 'GIRAFA'],
+        words: ['SARGANTANA', 'IGUANA', 'TORTUGA', 'CAMALEÓ', 'TÒTIL', 'GAMARÚS', 'ASE', 'LLUÇ', 'FALCÓ', 'GAT', 'XACAL', 'IBIS', 'mussol', 'mostela', 'llebre', 'girafa'],
         groups: {
             group1: { words: ['SARGANTANA', 'IGUANA', 'TORTUGA', 'CAMALEÓ'], difficulty: 'very-easy-group', label: 'RÈPTILS' },
             group2: { words: ['TÒTIL', 'GAMARÚS', 'ASE', 'LLUÇ'], difficulty: 'easy-group', label: 'NO GAIRE ESPAVILAT' },
