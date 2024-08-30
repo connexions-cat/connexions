@@ -1,63 +1,31 @@
 // script.js
 
 // Definimos los diferentes puzzles disponibles
-const words = [
-
-    'Sargantana', 'Iguana', 'Tortuga', 'Camaleó',
-
-    'Tòtil', 'Gamarús', 'Ase', 'Lluç',
-
-    'Falcó', 'Gat', 'Xacal', 'Ibis',
-
-    'Mussol', 'Mostela', 'Llebre', 'Girafa'
-
+const puzzles = [
+    {
+        words: ['SAANA', 'IGUANA', 'TORTUGA', 'CAMALEÓ', 'TÒTIL', 'GAMARÚS', 'ASE', 'LLUÇ', 'FALCÓ', 'GAT', 'XACAL', 'IBIS', 'mussol', 'mostela', 'llebre', 'girafa'],
+        groups: {
+            group1: { words: ['SAANA', 'IGUANA', 'TORTUGA', 'CAMALEÓ'], difficulty: 'very-easy-group', label: 'RÈPTILS' },
+            group2: { words: ['TÒTIL', 'GAMARÚS', 'ASE', 'LLUÇ'], difficulty: 'easy-group', label: 'NO GAIRE ESPAVILAT' },
+            group3: { words: ['FALCÓ', 'GAT', 'XACAL', 'ibis'], difficulty: 'medium-group', label: 'REPRESENTACIONS DE DÉUS EGIPCIS' },
+            group4: { words: ['mussol', 'mostela', 'llebre', 'girafa'], difficulty: 'hard-group', label: 'ACABATS EN NOTA MUSICAL' }
+        }
+    },
+    // Más puzzles aquí
 ];
 
+// Función para obtener un índice único para seleccionar un puzzle basándonos en la fecha actual
+function getPuzzleIndex() {
+    const date = new Date();
+    const dayOfYear = Math.floor((date - new Date(date.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
+    return dayOfYear % puzzles.length;
+}
 
+// Seleccionar el puzzle correspondiente al día
+const puzzle = puzzles[getPuzzleIndex()];
+const words = puzzle.words;
+const groups = puzzle.groups;
 
-const groups = {
-
-    group1: {
-
-        words: ['Sargantana', 'Iguana', 'Tortuga', 'Camaleó'],
-
-        difficulty: 'very-easy-group',
-
-        label: 'RÈPTILS'
-
-    },
-
-    group2: {
-
-        words: ['Tòtil', 'Gamarús', 'Ase', 'Lluç'],
-
-        difficulty: 'easy-group',
-
-        label: 'NO GAIRE ESPAVILAT'
-
-    },
-
-    group3: {
-
-        words: ['Falcó', 'Gat', 'Xacal', 'Ibis'],
-
-        difficulty: 'medium-group',
-
-        label: 'REPRESENTACIONS DE DÉUS EGIPCIS'
-
-    },
-
-    group4: {
-
-        words: ['Mussol', 'Mostela', 'Llebre', 'Girafa'],
-
-        difficulty: 'hard-group',
-
-        label: 'ACABATS EN NOTA MUSICAL'
-
-    }
-
-};
 document.addEventListener('DOMContentLoaded', () => {
 
     const board = document.getElementById('board');
