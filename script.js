@@ -3,11 +3,11 @@
 // Definimos los diferentes puzzles disponibles
 const puzzles = [
 	{
-		words:['ULL', 'COMPTE','VIGILA','ALERTA','CONTE','RONDALLA','GESTA','LLEGENDA',COMPTA', 'LLIURA', 'ENCOMANA', 'DONA', 'COMTE', 'FETA', 'MATO', 'MAO'],
+		words:['ULL', 'COMPTE','VIGILA','ALERTA','CONTE','RONDALLA','GESTA','LLEGENDA','COMPTA', 'LLIURA', 'ENCOMANA', 'DONA', 'COMTE', 'FETA', 'MATO', 'MAO'],
 		groups: {
 			group1: { words: ['ULL', 'COMPTE','VIGILA','ALERTA'], difficulty: 'very-easy-group', label: 'EP!' },
            		group2: { words: ['CONTE','RONDALLA','GESTA','LLEGENDA'], difficulty: 'easy-group', label: 'HISTÒRIA' },
-            		group3: { words: [COMPTA', 'LLIURA', 'ENCOMANA', 'DONA'], difficulty: 'medium-group', label: 'CONFIA' },
+            		group3: { words: ['COMPTA', 'LLIURA', 'ENCOMANA', 'DONA'], difficulty: 'medium-group', label: 'CONFIA' },
             		group4: { words: ['COMTE', 'FETA', 'MATO', 'MAO'], difficulty: 'hard-group', label: 'FORMATGES SENSE ACCENT' }
         		}
     	},
