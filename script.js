@@ -3,9 +3,9 @@
 // Definimos los diferentes puzzles disponibles
 const puzzles = [
 	{
-		words:['TINT', 'TISORES, 'MIRALLL', 'REVISTES','FULL', 'ESCALA', 'COLOR', 'PARELLA','GAMMA', 'MICROONES', 'VISIBLE', 'RADIO', 'TELEVISIÓ', 'PROJECCIÓ','BÀSQUET', 'CÀRREGA'],
+		words:['TINT', 'TISORES, 'MIRALL', 'REVISTES','FULL', 'ESCALA', 'COLOR', 'PARELLA','GAMMA', 'MICROONES', 'VISIBLE', 'RADIO', 'TELEVISIÓ', 'PROJECCIÓ','BÀSQUET', 'CÀRREGA'],
 		groups: {
-			group1: { words: ['TINT', 'TISORES, 'MIRALLL', 'REVISTES'], difficulty: 'very-easy-group', label: 'TROBAT A UNA PERRUQUERIA' },
+			group1: { words: ['TINT', 'TISORES, 'MIRALL', 'REVISTES'], difficulty: 'very-easy-group', label: 'TROBAT A UNA PERRUQUERIA' },
            		group2: { words: ['FULL', 'ESCALA', 'COLOR', 'PARELLA'], difficulty: 'easy-group', label: 'MANS DE PÓKER' },
             		group3: { words: ['GAMMA', 'MICROONES', 'VISIBLE', 'RADIO'], difficulty: 'medium-group', label: 'ONES ELECTROMAGNÈTIQUES' },
             		group4: { words: ['TELEVISIÓ', 'PROJECCIÓ','BÀSQUET', 'CÀRREGA'], difficulty: 'hard-group', label: 'PANTALLA DE ________' }
