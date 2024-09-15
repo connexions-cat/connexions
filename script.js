@@ -3,7 +3,7 @@
 // Definimos los diferentes puzzles disponibles
 const puzzles = [
 	{
-		words:['ULL', 'COMPTE','VIGILA','ALERTA','CONTE','RONDALLA','GESTA','LLEGENDA','COMPTA', 'LLIURA', 'ENCOMANA', 'DONA', 'COMTE', 'FETA', 'MATO', 'MAO'],
+		words:['TINT', 'TISORES, 'MIRALL', 'REVISTES','FULL', 'ESCALA', 'COLOR', 'PARELLA','GAMMA', 'MICROONES', 'VISIBLE', 'RADIO', 'TELEVISIÓ', 'PROJECCIÓ','BÀSQUET', 'CÀRREGA'],
 		groups: {
 			group1: { words: ['TINT', 'TISORES, 'MIRALL', 'REVISTES'], difficulty: 'very-easy-group', label: 'TROBAT A UNA PERRUQUERIA' },
            		group2: { words: ['FULL', 'ESCALA', 'COLOR', 'PARELLA'], difficulty: 'easy-group', label: 'MANS DE PÓKER' },
