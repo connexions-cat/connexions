@@ -6,8 +6,8 @@ const puzzles = [
 		words:['TINT', 'TISORES', 'MIRALL', 'REVISTES','FULL', 'ESCALA', 'COLOR', 'PARELLA','GAMMA', 'MICROONES', 'VISIBLE', 'RADIO', 'TELEVISIÓ', 'PROJECCIÓ','BLOQUEIG', 'CÀRREGA'],
 		groups: {
 			group1: { words: ['TINT', 'TISORES', 'MIRALL', 'REVISTES'], difficulty: 'very-easy-group', label: 'TROBAT A UNA PERRUQUERIA' },
-           		group2: { words: ['GAMMA', 'MICROONES', 'VISIBLE', 'RADIO'], difficulty: 'easy-group', label: 'MANS DE PÓKER' },
-            		group3: { words: ['FULL', 'ESCALA', 'COLOR', 'PARELLA'], difficulty: 'medium-group', label: 'ONES ELECTROMAGNÈTIQUES' },
+           		group2: { words: ['GAMMA', 'MICROONES', 'VISIBLE', 'RADIO'], difficulty: 'easy-group', label: 'ONES ELECTROMAGNÈTIQUES' },
+            		group3: { words: ['FULL', 'ESCALA', 'COLOR', 'PARELLA'], difficulty: 'medium-group', label: 'MANS DE PÓKER' },
             		group4: { words: ['TELEVISIÓ', 'PROJECCIÓ','BLOQUEIG', 'CÀRREGA'], difficulty: 'hard-group', label: 'PANTALLA DE ________' }
         		}
     	},
